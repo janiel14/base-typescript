@@ -6,7 +6,7 @@ import helmet from 'helmet'
 import methodOverride from 'method-override'
 import { MailSender } from './MailSender'
 import { Ticks } from './Ticks'
-import { IndexRouter } from '../app/routes/IndexRouter'
+import { IndexRouter } from '../app/routes/indexRouter'
 
 export class Express {
   public port: number
