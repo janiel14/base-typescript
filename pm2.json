@@ -1,0 +1,17 @@
+{
+    "apps": [
+      {
+        "name": "base-typescript",
+        "script": "npm",
+        "args": "start",
+        "env": {
+          "NODE_ENV": "production",
+          "NODE_PORT": "9001",
+          "NODE_HASH": "0123hash",
+          "NODE_JWT_SECRET": "0123secret",
+          "NODE_IV": "0123IV",
+          "NODE_MONGO_URL": "mongodb://localhost/test"
+        }
+      }
+    ]
+  }
