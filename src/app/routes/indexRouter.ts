@@ -7,8 +7,8 @@ export class IndexRouter {
   constructor() {
     this.r = Router()
     this.r.route('*')
-      .get((req: Request, res: Response) => {
-        res.status(200).json(new IndexController().defaultRoute())
+      .all((req: Request, res: Response) => {
+        res.status(200).json(new IndexController().loggerAllRequest(req))
       })
   }
 }

@@ -28,9 +28,9 @@ export class Express {
     app.use(helmet())
     app.use(compression())
     const mailSender = new MailSender()
-    mailSender.testConnectingMailServer()
-    const ticks = new Ticks()
-    ticks.init()
+    // mailSender.testConnectingMailServer()
+    // const ticks = new Ticks()
+    // ticks.init()
     app.use(new IndexRouter().r)
     this.app = app
   }
