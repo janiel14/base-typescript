@@ -6,7 +6,7 @@ import helmet from 'helmet'
 import methodOverride from 'method-override'
 import { MailSender } from './MailSender'
 import { Ticks } from './Ticks'
-import { IndexRouter } from '../app/routes/IndexRouter'
+import { IndexRouter } from '../app/routes/indexRouter'
 
 export class Express {
   public port: number
@@ -14,7 +14,7 @@ export class Express {
 
   constructor() {
     const app = express()
-    this.port = parseInt(process.env.NODE_PORT, 10) || 9001
+    this.port = parseInt(process.env.NODE_PORT, 10) || 8000
     app.set('view engine', 'pug')
     app.set('views', './public/views')
     app.set('port', this.port)
